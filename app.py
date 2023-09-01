@@ -2,7 +2,8 @@ import streamlit as st
 import os
 from langchain import HuggingFaceHub
 
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+#os.environ["HUGGINGFACEHUB_API_TOKEN"] = "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"
+
 st.set_page_config(page_title="QA app", page_icon=":robot:")
 question = st.text_input("Enter your question")
 question = str(question)
