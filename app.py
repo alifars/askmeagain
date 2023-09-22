@@ -18,8 +18,8 @@ option = st.selectbox(
 
 
 
-#model = HuggingFaceHub(repo_id = "google/flan-t5-large")
-model = HuggingFaceHub(repo_id = "tiiuae/falcon-180B")
+model = HuggingFaceHub(repo_id = "google/flan-t5-large")
+#model = HuggingFaceHub(repo_id = "tiiuae/falcon-180B")
 submit = st.button("Generate Answer")
 if submit:
     answer = model(question)
