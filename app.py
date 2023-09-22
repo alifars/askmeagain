@@ -12,11 +12,9 @@ question = str(question)
 
 option = st.selectbox(
     'LLM',
-    ('Flan_t5_large'))
+    ('Flan_t5_large', 'T5'))
 
-option = st.selectbox(
-    'How would you like to be contacted?',
-    ('Email', 'Home phone', 'Mobile phone'))
+
 
 
 model = HuggingFaceHub(repo_id = "google/flan-t5-large")
